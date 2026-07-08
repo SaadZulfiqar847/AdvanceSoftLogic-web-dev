@@ -117,3 +117,35 @@ nav {
 .feature-item p {
     color: var(--color-text-light);
 }
+.testimonials {
+    padding: 4rem 2rem;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: var(--color-dark);
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.testimonial-item {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+    flex: 1;
+    max-width: 400px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
