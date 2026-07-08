@@ -85,3 +85,35 @@ nav {
 .btn:hover {
     background-color: #3a8bc0;
 }
+.features {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: var(--color-dark);
+    margin-bottom: 2.5rem;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-item {
+    background-color: var(--color-light);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    color: var(--color-text-light);
+}
