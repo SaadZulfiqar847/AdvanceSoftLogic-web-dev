@@ -13,10 +13,13 @@
 }
 
 body {
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-white);
+}
+h1, h2, h3, .logo {
+    font-family: 'Poppins', Arial, sans-serif;
 }
 header {
     background-color: var(--color-dark);
@@ -88,6 +91,7 @@ nav {
 .features {
     padding: 4rem 2rem;
     text-align: center;
+    background-color: var(--color-light);
 }
 
 .features h2 {
@@ -103,10 +107,18 @@ nav {
 }
 
 .feature-item {
-    background-color: var(--color-light);
+    background-color: var(--color-white);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: left;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eaeaea;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .feature-item h3 {
@@ -177,11 +189,19 @@ nav {
 
 .contact-form input,
 .contact-form textarea {
-    padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(78, 168, 222, 0.15);
 }
 
 .contact-form button {
